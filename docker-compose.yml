@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    # image: test
+    build: .
+    restart: on-failure
+    container_name: savico
+    ports:
+      - 29722:80
+    volumes:
+      - ./wwwroot/UploadFile:/app/wwwroot/UploadFile
+      - ./appsettings.json:/app/appsettings.json:rw

@@ -1,0 +1,11 @@
+.idea/
+**/uploads/
+**/tmp/
+*.pdf
+*.log
+**/bin/
+**/obj/
+appsettings.json
+.vs/
+
+.DS_Store

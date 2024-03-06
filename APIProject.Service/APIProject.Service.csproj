@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="EPPlus" Version="6.0.3" />
+    <PackageReference Include="FirebaseAdmin" Version="2.3.0" />
+    <PackageReference Include="PageList" Version="1.2.0" />
+    <PackageReference Include="RestSharp" Version="106.0.0" />
+    <PackageReference Include="SendGrid" Version="9.26.0" />
+    <PackageReference Include="Sentry.AspNetCore" Version="3.15.0" />
+    <PackageReference Include="SharpRaven" Version="2.4.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APIProject.Common\APIProject.Common.csproj" />
+    <ProjectReference Include="..\APIProject.Repository\APIProject.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RestSharp">
+      <HintPath>bin\Debug\netcoreapp3.1\RestSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

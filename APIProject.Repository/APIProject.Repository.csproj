@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="FirebaseAdmin" Version="2.3.0" />
+    <PackageReference Include="PagedList.Core" Version="1.17.4" />
+    <PackageReference Include="PageList" Version="1.2.0" />
+    <PackageReference Include="Sentry.AspNetCore" Version="3.15.0" />
+    <PackageReference Include="SharpRaven" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\APIProject.Common\APIProject.Common.csproj" />
+    <ProjectReference Include="..\APIProject.Domain\APIProject.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RestSharp">
+      <HintPath>..\APIProject.Service\bin\Debug\netcoreapp3.1\RestSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

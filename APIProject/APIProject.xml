@@ -1,0 +1,1123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APIProject</name>
+    </assembly>
+    <members>
+        <member name="M:APIProject.Controllers.App.AuthenticationController.Login(APIProject.Service.Models.Authentication.LoginAppModel)">
+            <summary>
+            Đăng nhập 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+            <remarks>
+            Sample request:
+            </remarks>
+        </member>
+        <member name="M:APIProject.Controllers.App.AuthenticationController.CheckPhoneLogin(APIProject.Common.DTOs.Authentication.CheckPhoneModel)">
+            <summary>
+            Kiểm tra số điện thoại đăng nhập
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.AuthenticationController.Logout">
+            <summary>
+            Đăng xuất
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.AuthenticationController.CheckPhoneRegister(APIProject.Common.DTOs.Authentication.CheckPhoneModel)">
+            <summary>
+            Kiểm tra số điện thoại đăng ký
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.AuthenticationController.Register(APIProject.Service.Models.Authentication.RegisterModel)">
+            <summary>
+            Đăng ký tài khoản
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.AuthenticationController.GetUserInfo">
+            <summary>
+            Thông tin tài khoản khách hàng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.AuthenticationController.SendSms(System.String,System.String)">
+            <summary>
+            Test gửi tin nhắn
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.ContactInfoController.GetContactInfo">
+            <summary>
+            Thông tin liên hệ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.CustomerController.UpdateCustomerInfo(APIProject.Service.Models.Customer.UpdateCustomerInfoModel)">
+            <summary>
+            Cập nhật thông tin cá nhân
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.CustomerController.DeleteCustomer">
+            <summary>
+            Xóa tài khoản
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.EventParticipantController.CreateQRCode(APIProject.Common.DTOs.EventParticipant.CreateQRCodeModel)">
+            <summary>
+            Tạo mã QR
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.EventParticipantController.ScanQRCode(APIProject.Common.DTOs.EventParticipant.ScanQRCodeModel)">
+            <summary>
+            Scan QR
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.EventParticipantController.InputCustomerInfo(APIProject.Common.DTOs.EventParticipant.EventParticipantModel)">
+            <summary>
+            Nhập thông tin khách hàng
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.EventParticipantController.GetListEvent">
+            <summary>
+            Lấy danh sách sự kiện
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.EventParticipantController.GetListEventChannel">
+            <summary>
+            Lấy danh sách kênh tham gia sự kiện
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.EventParticipantController.GetListStall">
+            <summary>
+            Lấy danh sách gian hàng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.EventParticipantController.GetListEventGift(System.Int32)">
+            <summary>
+            Lấy danh sách quà tặng
+            </summary>
+            <param name="eventID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.GiftController.GetListVoucher">
+            <summary>
+            Danh sachs Voucher
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.HomeController.GetHome">
+            <summary>
+            Màn trang chủ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.HomeController.GetHomeStaff">
+            <summary>
+            Màn trang chủ nhân viên
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.HomeController.CheckTimezone">
+            <summary>
+            Lấy Timezone
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.MapController.GetListMap">
+            <summary>
+            Danh sách sơ đồ mặt bằng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.MemberPointHistoryController.GetPointHistory(System.Int32,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Danh sách lịch sử tích điểm
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="type">1: Tích điểm , 2:Đổi điểm </param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.NewsController.GetListNews(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Lấy danh sách tin tức
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="searchKey"></param>
+            <param name="type">1:Khuyến mại ,3:Tuyển dụng , 4: Sự kiện, 5: Tiện ích</param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.NewsController.GetNewsDetail(System.Int32)">
+            <summary>
+            Chi tiết tin tức
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.NewsController.GetNewsRelated(System.Int32)">
+            <summary>
+            Tin tức liên quan
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.NotificationController.GetListNotification(System.Int32,System.Int32)">
+            <summary>
+            Danh sách thông báo
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.NotificationController.ReadNotification(System.Int32)">
+            <summary>
+            Đọc thông báo
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.NotificationController.ReadAllNotification">
+            <summary>
+            Đọc tất cả thông báo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.StallController.GetListStall(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32})">
+            <summary>
+            Danh sách gian hàng
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="categoryID">Ngành hàng</param>
+            <param name="floor">Tầng : 1,2,3</param>
+            <param name="searchKey"></param>
+            <param name="orderBy">1: Sắp xếp theo: A-Z , 2: Sắp xếp theo: Z-A, 3: Sắp xếp theo: Gian hàng mới</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.StallController.GetStallDetail(System.Int32)">
+            <summary>
+            Chi tiết gian hàng
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.StallController.GetStallRelated(System.Int32)">
+            <summary>
+            Danh sách gian hàng liên quan
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.StallController.GetListCategory">
+            <summary>
+            Danh sách ngành hàng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.SurveyController.GetListSurveryQuestionsApp">
+            <summary>
+            Danh sách phiếu khảo sát 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.SurveyController.AnswerSurveyQuestion(APIProject.Common.DTOs.Survey.AnswerSurveyModel)">
+            <summary>
+            Trả lời phiếu khảo sát
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.VoucherController.GetListVoucher(System.Int32,System.Int32)">
+            <summary>
+            Danh sách voucher 
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.VoucherController.GetMyListVoucherExpired(System.Int32,System.Int32)">
+            <summary>
+            Danh sách voucher hết hạn sử dụng
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.VoucherController.GetMyListVoucher(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Danh sách voucher của tôi và đã sử dụng
+            </summary>
+            <param name="status"> 1: Voucher của tôi, 2: Voucher đã sử dụng</param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.VoucherController.GetMyVoucherDetail(System.Int32)">
+            <summary>
+            Chi tiết voucher của tôi
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.VoucherController.GetVoucherDetail(System.Int32)">
+            <summary>
+            Chi tiết voucher
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.VoucherController.ExchangeVoucher(System.Int32)">
+            <summary>
+            Đổi voucher
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.App.VoucherController.UseVoucher(System.Int32)">
+            <summary>
+            Sử dụng voucher
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.AddressController.GetListProvince">
+            <summary>
+            Tỉnh/thành phố
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.AddressController.GetListDistrict(System.Int32)">
+            <summary>
+            Quận/huyện
+            </summary>
+            <param name="provinceID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.AddressController.GetListWard(System.Int32)">
+            <summary>
+            Xã/phường
+            </summary>
+            <param name="districtID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.AuthenticationController.Login(APIProject.Service.Models.Authentication.LoginModel)">
+             <summary>
+             Đăng nhập cho Admin
+             </summary>
+             <param name="model"></param>
+             <returns></returns>
+             <remarks>
+             Sample request:
+            
+                 {
+                   "phone"    : "0987654321",
+                   "password" : "12345678"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:APIProject.Controllers.Web.AuthenticationController.ChangePassword(APIProject.Common.Models.Users.ChangePasswordWebModel)">
+            <summary>
+            Đổi mật khẩu
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.AuthenticationController.GetUserInfo">
+            <summary>
+            Thông tin tài khoản
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CategoryController.GetListCategory(System.Int32,System.Int32)">
+            <summary>
+            danh sách Ngành hàng
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CategoryController.CreateCategory(APIProject.Common.DTOs.Category.CreateCategoryModel)">
+            <summary>
+            Thêm mới Ngành hàng
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CategoryController.UpdateCategory(APIProject.Common.DTOs.Category.CategoryModel)">
+            <summary>
+            Cập nhật Ngành hàng
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CategoryController.DeleteCategory(System.Int32)">
+            <summary>
+            Xoá Ngành hàng
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.ConfigController.GetSurvery">
+            <summary>
+            Phiếu khảo sát
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.ConfigController.UpdateLinkSurvery(System.String)">
+            <summary>
+            Sửa link phiếu khảo sát
+            </summary>
+            <param name="pointAdd"></param>
+            <param name="orderValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.ConfigController.GetContact">
+            <summary>
+            Contact
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.ConfigController.UpdateContact(System.String,System.String,System.String)">
+            <summary>
+            Sửa Contact
+            </summary>
+            <param name="pointAdd"></param>
+            <param name="orderValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.ConfigController.GetEventInfo">
+            <summary>
+            Event Info
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.ConfigController.UpdateEventInfo(System.Int64,System.Int64)">
+            <summary>
+            Sửa Event Info
+            </summary>
+            <param name="pointAdd"></param>
+            <param name="orderValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CustomerController.GetListCustomer(System.Int32,System.Int32,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Danh sách khách hàng
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="status"></param>
+            <param name="searchKey"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="originCustomer">1:Sử dụng App , 2: PG tạo</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CustomerController.GetCustomerDetail(System.Int32)">
+            <summary>
+            Chi tiết khách hàng
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CustomerController.ChangeStatus(System.Int32)">
+            <summary>
+            Thay đổi trạng thái
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CustomerController.CreateCustomer(APIProject.Service.Models.CreateCustomer)">
+            <summary>
+            Thêm khách hàng
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CustomerController.ExportExcelZaloOA">
+            <summary>
+            Export excel khách hàng zalo OA
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CustomerController.ImportSampleCustomer">
+            <summary>
+            Mẫu import khách hàng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.CustomerController.ImportCustomer">
+            <summary>
+            Import khách hàng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventController.GetListEvent(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Danh sách chiến dịch
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="searchKey"></param>
+            <param name="status"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventController.GetListEventStatistic">
+            <summary>
+            Danh sách chiến dịch thống kê biểu đồ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventController.GetEventDetail(System.Int32)">
+            <summary>
+            Chi tiết chiến dịch
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventController.CreateEvent(APIProject.Common.DTOs.Event.CreateEventModel)">
+            <summary>
+            Thêm mới tin tức
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventController.UpdateEvent(APIProject.Common.DTOs.Event.UpdateEventModel)">
+            <summary>
+            Cập nhật chiến dịch
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventController.DeleteEvent(System.Int32)">
+            <summary>
+            Xoá chiến dịch
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventController.ChangeStatus(System.Int32)">
+            <summary>
+            Thay đổi trạng thái
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventParticipantController.CreateQRCode(APIProject.Common.DTOs.EventParticipant.CreateQRCodeModel)">
+            <summary>
+            Tạo mã QR
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventParticipantController.GetListEvent">
+            <summary>
+            Lấy danh sách sự kiện
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventParticipantController.GetListEventChannel">
+            <summary>
+            Lấy danh sách kênh tham gia sự kiện
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.EventParticipantController.GetListStall">
+            <summary>
+            Lấy danh sách gian hàng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.GetListGift(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Danh sách quà tặng
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="searchKey"></param>
+            <param name="type"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.GetGiftDetail(System.Int32)">
+            <summary>
+            Chi tiết quà tặng
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.GetListExchangeGift(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Danh sách đổi quà
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="searchKey"></param>
+            <param name="type"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.GetListGiftCode(System.Int32,System.Int32,System.Int32,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Danh sách mã quà tặng/voucher
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="searchKey"></param>
+            <param name="status"></param>
+            <param name="GiftID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.CreateGift(APIProject.Common.DTOs.Gift.CreateGiftModel)">
+            <summary>
+            Thêm quà tặng
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.UpdateGift(APIProject.Common.DTOs.Gift.UpdateGiftModel)">
+            <summary>
+            Cập nhật quà tặng
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.DeleteGift(System.Int32)">
+            <summary>
+            Xoá quà tặng
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.ChangeStatus(System.Int32)">
+            <summary>
+            Cập nhật trạng thái
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.CreateGiftCode(APIProject.Common.DTOs.Gift.CreateGiftCodeModel)">
+            <summary>
+            Thêm mới mã voucher/quà tặng
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.UpdateGiftCode(APIProject.Common.DTOs.Gift.UpdateGiftCodeModel)">
+            <summary>
+            Cập nhật mã quà tặng/voucher
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.DeleteGiftCode(System.Int32)">
+            <summary>
+            Xoá mã quà tặng/voucher
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.ImportVoucherCode">
+            <summary>
+            Mẫu Excel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.GiftController.ImportVoucher(APIProject.Common.DTOs.Gift.InportVoucherModel)">
+            <summary>
+            Thêm voucher bằng file Excel
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.MemberPointHistoryController.GetListPointHistory(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String)">
+            <summary>
+            Danh sách lịch sử tích điểm
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="type"></param>
+            <param name="customerID"></param>
+            <param name="eventName"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.MemberPointHistoryController.GetPointHistoryDetail(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Chi tiết lịch sử tích điểm
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.MemberPointHistoryController.GetListChangeHistory(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String)">
+            <summary>
+            Danh sách lịch sử đổi điểm
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="type"></param>
+            <param name="customerID"></param>
+            <param name="searchKey"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.NewsController.GetListNews(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Danh sách tin tức 
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="searchKey"></param>
+            <param name="type">1: Khuyến mại , 3: Tuyển dụng ,4: Sự kiện</param>
+            <param name="status"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.NewsController.GetNewsDetail(System.Int32)">
+            <summary>
+            chi tiết tin tức
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.NewsController.CreateNews(APIProject.Common.DTOs.News.CreateNewsModel)">
+            <summary>
+            Thêm mới tin tức
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.NewsController.UpdateNews(APIProject.Common.DTOs.News.UpdateNewsModel)">
+            <summary>
+            Cập nhật tin tức
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.NewsController.DeleteNews(System.Int32)">
+            <summary>
+            Xoá tin tức
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.NewsController.ChangeStatus(System.Int32)">
+            <summary>
+            Thay đổi trạng thái
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StaffController.GetListStaff(System.Int32,System.Int32,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32})">
+            <summary>
+            Danh sách nhân viên
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="status"></param>
+            <param name="searchKey"></param>
+            <param name="searchProvince"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StaffController.CreateStaff(APIProject.Common.DTOs.Staff.AddStaffModel)">
+            <summary>
+            Thêm nhân viên
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StaffController.UpdateStaff(APIProject.Common.DTOs.Staff.UpdateStaffModel)">
+            <summary>
+            Cập nhật thông tin nhân viên
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StaffController.DeleteStaff(System.Int32)">
+            <summary>
+            Xoá nhân viên
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StaffController.ChangeStatus(System.Int32)">
+            <summary>
+            Thay đổi trạng thái
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StallController.GetListStall(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Int32})">
+            <summary>
+            Danh sách gian hàng
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="floor"></param>
+            <param name="status"></param>
+            <param name="searchKey"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StallController.GetStallDetail(System.Int32)">
+            <summary>
+            Chi tiết gian hàng
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StallController.ChangeStatus(System.Int32)">
+            <summary>
+            Thay đổi trạng thái gian hàng
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StallController.CreateStall(APIProject.Common.DTOs.Stall.CreateStallModel)">
+            <summary>
+            Thêm mới gian hàng
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StallController.UpdateStall(APIProject.Common.DTOs.Stall.UpdateStallModel)">
+            <summary>
+            Cập nhật gian hàng
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StallController.DeleteStall(System.Int32)">
+            <summary>
+            Xoá gian hàng
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetListNewCustomer(System.Nullable{System.Int32},System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Đếm số khách hàng tham gia sự kiện 
+            </summary>
+            <param name="EventID"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="searchKey"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.CustomerEventDetail(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            chi tiết khách hàng tham gia sự kiện
+            </summary>
+            <param name="ID"></param>
+            <param name="SearchKey"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetListPercentageCustomer(System.Nullable{System.Int32})">
+            <summary>
+            Tỷ lệ dân cư khách hàng các xã phường trong quận Long Biên
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetListPercentageGenderCustomer(System.Nullable{System.Int32})">
+            <summary>
+            Tỷ lệ giới tính khách hàng 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetListCustomerChannelPercentage(System.Nullable{System.Int32})">
+            <summary>
+            Tỷ lệ phần trăm kênh khách hàng tham gia sự kiện
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetListCustomerPercentageProvinces(System.Nullable{System.Int32})">
+            <summary>
+            Tỷ lệ khách hàng các tỉnh lân cận 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetListCustomerPercentageAge(System.Nullable{System.Int32})">
+            <summary>
+            Tỷ lệ độ tuổi khách hàng 
+            </summary>
+            <param name="EventID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetSumBillStall(System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Thống kế số hoá đơn của các gian hàng( từ bé đến lớn)
+            </summary>
+            <param name="TypeOrder"></param>
+            <param name="EventID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.ExportExcelSumBillStall">
+            <summary>
+            Xuất excel số hóa đơn của các giang hàng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetSumBillCategory(System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Thống kế giá trị hóa đơn trung bình của các nghành hàng( từ bé đến lớn)
+            </summary>
+            <param name="TypeOrder"></param>
+            <param name="EventID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.ExportExcelSumBillCategory">
+            <summary>
+            Xuất excel thống kê giá trị đơn trung bình của các ngành hàng
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetTotalGiftBills(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Tổng giá trị hoá đơn đổi quà trong chương trình
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="EventID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.ExportExcelTotalGiftBills(System.String,System.String)">
+            <summary>
+            Xuất excel tổng giá trị đơn đổi quà
+            </summary>
+            <param name="Fromdate"></param>
+            <param name="Todate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetCountGiftBills(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Tổng số hoá đơn đổi quà trong chương trình
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="EventID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.ExportExcelCountGiftBills(System.String,System.String)">
+            <summary>
+            Xuất excel tổng số hóa đơn đổi quà trong chương trình 
+            </summary>
+            <param name="Fromdate"></param>
+            <param name="Todate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetListSameFilter(System.Nullable{System.Int32})">
+            <summary>
+            Thống kê số lượng khách hàng cùng kỳ
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.FilterEventParticipant(System.String,System.String)">
+            <summary>
+            Thống kê khách hàng 
+            </summary>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetCustomerCampaign(System.Int32)">
+            <summary>
+            Thống kê số lượng khách hàng trong chiến dịch
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.StatisticsGiftExchange(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Thống kê số lần đổi quà tronng sự kiện
+            </summary>
+            <param name="SearchKey"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetNumberOfGiftExchangeDetail(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Chi tiết số lượt đổi quà
+            </summary>
+            <param name="ID"></param>
+            <param name="SearchKey"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetGiftVoucherDetail(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Chi tiết quà tặng trong chiến dịch
+            </summary>
+            <param name="ID"></param>
+            <param name="SearchKey"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.GetEventParticipantDetail(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Chi tiết hóa đơn đổi quà
+            </summary>
+            <param name="ID"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.StatisticController.ExportExcelGiftExchange(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Xuất excel danh sách khách hàng đổi quà
+            </summary>
+            <param name="ID"></param>
+            <param name="SeachKey"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.SurveyController.GetListSurveryQuestions(System.String)">
+            <summary>
+            Danh sách câu hỏi khảo sát trên Web
+            </summary>
+            <param name="SearchKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.SurveyController.GetSurveyAnswerStatistic(System.Int32)">
+            <summary>
+            Thống kê tỉ lệ câu trả lời
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.SurveyController.GetSurveyContentStatistic(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Thống kê ý kiến khách hàng
+            </summary>
+            <param name="ID"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.SurveyController.DeleteSurvey(System.Int32)">
+            <summary>
+            Xoá câu hỏi khảo sát
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.SurveyController.ChangeStatus(System.Int32)">
+            <summary>
+            Thay đổi trạng thái
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.SurveyController.CreateSurvery(APIProject.Common.DTOs.Survey.CreateSurveryModel)">
+            <summary>
+            Thêm khảo sát
+            </summary>
+            <param name="surveyQuestion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.SurveyController.UpdateSurvery(APIProject.Common.DTOs.Survey.UpdateSurveryModel)">
+            <summary>
+            Sửa câu hỏi khảo sát
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.UploadController.UploadImage">
+            <summary>
+            Upload nhiều ảnh
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.UserController.GetListUser(System.Int32,System.Int32,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Danh sách user
+            </summary>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <param name="SearchKey"></param>
+            <param name="role"></param>
+            <param name="status"></param>
+            <param name="fromDate"></param>
+            <param name="toDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.UserController.GetUserDetail(System.Int32)">
+            <summary>
+            Chi tiết tài khoản
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.UserController.ChangeStatus(System.Int32)">
+            <summary>
+            Thay đổi trạng thái tài khoản
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.UserController.CreateUser(APIProject.Common.Models.Users.CreateUserModel)">
+            <summary>
+            Thêm tài khoản cho admin
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.UserController.UpdateUser(APIProject.Common.Models.Users.UpdateUserModel)">
+            <summary>
+            Cập nhật user
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIProject.Controllers.Web.UserController.DeleteUser(System.Int32)">
+            <summary>
+            Xoá user
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
